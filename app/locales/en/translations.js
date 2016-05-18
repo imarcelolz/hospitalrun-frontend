@@ -1,10 +1,11 @@
+      xref: 'XRef'
 export default {
   dashboard: {
     title: 'O que você gostaria de fazer?'
   },
   navigation: {
-    imaging: 'Exame Laboratorial de Imagem',
-    inventory: 'Inventário',
+    imaging: 'Exame de Imagem',
+    Estoque: 'Estoque',
     patients: 'Pacientes',
     appointments: 'Consultas',
     medication: 'Medicação',
@@ -16,7 +17,7 @@ export default {
       items: 'Itens',
       completed: 'Completo',
       new_request: 'Nova Requisição',
-      inventory_received: 'Inventário Recebido',
+      Estoque_received: 'Estoque Recebido',
       reports: 'Relatórios',
       patient_listing: 'Listando Pacientes',
       new_patient: 'Novos Pacientes',
@@ -78,13 +79,13 @@ export default {
       progress_title: 'Carregando Banco de Dados',
       display_alert_title: 'Selecione o Arquivo',
       display_alert_message: 'Selecione o arquivo',
-      error_display_alert_title: 'Erro ao carregar',
-      error_display_alert_message: `O banco de dados não pôde ser importado. O erro foi: {{error}}`,
+      Erro_display_alert_title: 'Erro ao carregar',
+      Erro_display_alert_message: `O banco de dados não pôde ser importado. O erro foi: {{Erro}}`,
       edit_title: 'Carregar DB'
     },
     lookup: {
-      delete_value_inventory_type_medication_title: 'Não é possível deletar medicação',
-      delete_value_inventory_type_medication_message: 'O tipo de inventário medicação não pode ser excluído porque ele é necessário para o módulo de medicação.',
+      delete_value_Estoque_type_medication_title: 'Não é possível deletar medicação',
+      delete_value_Estoque_type_medication_message: 'O tipo de Estoque medicação não pode ser excluído porque ele é necessário para o módulo de medicação.',
       delete_value_lab_pricing_type_procedure_title: 'Não é possível deletar o tipo de preço do laboratório',
       delete_value_lab_pricing_type_procedure_message: 'O tipo de preço do procedimento de laboratório não pode ser excluído porque ele é necessário para o módulo de laboratório.',
       delete_value_imaging_pricing_type_procedure_title: 'Não é possível excluir Tipo de preço',
@@ -121,9 +122,9 @@ export default {
       diagnosis_list: 'Diagnóstico',
       cpt_code_list: 'CPT Código',
       expense_account_list: 'Contas de Despesas',
-      aisle_location_list: 'Prateleira do Local do Inventário',
-      warehouse_list: 'Local do Inventário',
-      inventory_types: 'Tipos de Inventário',
+      aisle_location_list: 'Prateleira do Local do Estoque',
+      warehouse_list: 'Local do Estoque',
+      Estoque_types: 'Tipos de Estoque',
       imaging_pricing_types: 'Tipos de Preços de Imagem',
       lab_pricing_types: 'Tipos de Preços de Laboratório',
       patient_status_list: 'Lista de Status de Pacientes',
@@ -188,14 +189,14 @@ export default {
         add_imaging: 'Adicionar Imagem',
         complete_imaging: 'Completar Imagem',
         delete_imaging: 'Deletar Imagem',
-        inventory: 'Inventário',
-        add_inventory_request: 'Adicionar Requisição de Inventário',
-        add_inventory_item: 'Adicionar Item de Inventário',
-        add_inventory_purchase: 'Adicionar Compra Inventário',
-        adjust_inventory_location: 'Ajustar Local de Inventário',
-        delete_inventory_item: 'Deletar Item Inventário',
-        delete_inventory_purchase: 'Deletar Compra de Inventário',
-        fulfill_inventory: 'Preencher Inventário',
+        Estoque: 'Estoque',
+        add_Estoque_request: 'Adicionar Requisição de Estoque',
+        add_Estoque_item: 'Adicionar Item de Estoque',
+        add_Estoque_purchase: 'Adicionar Compra Estoque',
+        adjust_Estoque_location: 'Ajustar Local de Estoque',
+        delete_Estoque_item: 'Deletar Item Estoque',
+        delete_Estoque_purchase: 'Deletar Compra de Estoque',
+        fulfill_Estoque: 'Preencher Estoque',
         user_roles: 'Funções de Usuário'
       },
       messages: {
@@ -326,7 +327,7 @@ export default {
   login: {
     messages: {
       sign_in:  'por favor espere',
-      error:    'Nome de usuário ou senha está incorreta.'
+      Erro:    'Nome de usuário ou senha está incorreta.'
     },
     labels: {
       password: 'Senha',
@@ -334,7 +335,7 @@ export default {
       sign_in:  'Sign in'
     }
   },
-  inventory: {
+  Estoque: {
     edit: {
       cost: 'Custo por unidade:',
       delivered: 'Entregue para:',
@@ -356,7 +357,7 @@ export default {
       adjustment_type: 'Tipo de Ajuste',
       aisle: 'Prateleira',
       aisle_location: 'Local da prateleira',
-      all_inventory: 'Todo Inventário',
+      all_Estoque: 'Todo Estoque',
       bill_to: 'Bill To',
       consume_purchases: 'As compras do consumidor',
       consumption_rate: 'Taxa de Consumo',
@@ -385,9 +386,9 @@ export default {
       gift_usage: 'Gift in Kind Usage',
       gift_in_kind_no: 'N',
       gift_in_kind_yes: 'S',
-      inventory_consumed: 'Inventario Consumida',
-      inventory_item: 'Inventario Item',
-      inventory_obsolence: 'Inventario Obsoleto',
+      Estoque_consumed: 'Inventario Consumida',
+      Estoque_item: 'Inventario Item',
+      Estoque_obsolence: 'Inventario Obsoleto',
       invoice_items: 'Pedido de Itens',
       invoice_line_item: 'Pedido Linha Item',
       invoice_number: 'Número do Pedido',
@@ -416,236 +417,235 @@ export default {
       remove: 'Remover',
       reorder_point: 'Ponto de Reabastecimento',
       requested_items: 'Item Requisitados',
-      sale_price_per_unit: 'Sale Price per Unit',
-      save: 'Save',
-      serial_number: 'Serial/Lot Number',
+      sale_price_per_unit: 'Preço de Venda por Unidade',
+      save: 'Salvar',
+      serial_number: 'Serial/Lote Número',
       total: 'Total',
-      total_cost: 'Total Cost',
-      total_received: 'Total Received: {{total}}',
-      transaction: 'Transaction',
-      transactions: 'Transactions',
-      transfer: 'Transfer',
-      transfer_from: 'Transfer From',
-      transfer_to: 'Transfer To Location',
-      transfer_to_aisle: 'Transfer to Aisle Location',
-      unit: 'Unit',
-      unit_cost: 'Unit Cost',
-      vendor: 'Vendor',
-      vendor_item_number: 'Vendor Item Number',
-      xref: 'XRef'
+      total_cost: 'Custo Total',
+      total_received: 'Total Recebido: {{total}}',
+      transaction: 'Transação',
+      transactions: 'Transações',
+      transfer: 'Transferir',
+      transfer_from: 'Transferir de',
+      transfer_to: 'Transferência para Localização',
+      transfer_to_aisle: 'Transferência de prateleira',
+      unit: 'Unidade',
+      unit_cost: 'Custo por Unidade',
+      vendor: 'Fornecedor',
+      vendor_item_number: 'Número do Item do Fornecedor',
     },
     messages: {
-      adjust: 'Please adjust the quantities on the appropriate location(s) to account for the difference of {{difference}}.',
-      create_request: 'Create a new request?',
-      delete: 'Are you sure you wish to delete {{name}}?',
-      item_not_found: 'The inventory item <strong>{{item}}</strong> could not be found.<br>If you would like to create a new inventory item, fill in the information below.<br>Otherwise, press the Cancel button to return.',
-      loading: 'Loading transactions ...',
-      purchase_saved: 'The inventory purchases have been successfully saved.',
-      no_requests: 'No requests found.',
-      no_items: 'No items found.',
-      quantity: 'The total quantity of <strong>({{quantity}})</strong> does not match the total quantity in the locations <strong>({{locationQuantity}})</strong>.',
-      remove_item: 'Are you sure you want to remove this item from this invoice?',
-      remove_item_request: 'Are you sure you want to remove this item from this request?',
-      request_fulfilled: 'The inventory request has been fulfilled.',
-      request_updated: 'The inventory request has been updated.',
-      warning: 'Please fill in required fields (marked with *) and correct the errors before adding.'
+      adjust: 'Por favor, ajustar as quantidades sobre o local (s) apropriado para a conta para a diferença de {{difference}}.',
+      create_request: 'Criar um novo pedido?',
+      delete: 'Você tem certeza que deseja deletar {{name}}?',
+      item_not_found: 'O item de estoque <strong>{{item}}</strong> não foi encontrado.<br>Se você gostaria de criar um novo item de estoque, preencha as informações abaixo.<br>Caso contrário, clique no botão cancelar.',
+      loading: 'Carregando Transações ...',
+      purchase_saved: 'As compras do estoque foram salvas com sucesso.',
+      no_requests: 'Nenhuma requisição encontrada.',
+      no_items: 'Nenhum item encontrado.',
+      quantity: 'A quantidade total de <strong>({{quantity}})</strong> não confere com a quantidade total no local <strong>({{locationQuantity}})</strong>.',
+      remove_item: 'Tem certeza que deseja remover este item do pedido?',
+      remove_item_request: 'Tem certeza que deseja remover este item desta requisição?',
+      request_fulfilled: 'A requisição do estoque foi preenchida.',
+      request_updated: 'A requisição do estoque foi atualizada.',
+      warning: 'Por favor preencha os campos requeridos (marcado com *) e corrija os erros antes de adicionar.'
     },
     reports: {
       rows: {
-        adjustments: 'Adjustments',
-        adjustments_total: 'Total Adjustments',
-        balance_begin: 'Beginning Balance',
-        balance_end: 'Ending Balance',
-        category: 'Category',
-        consumed: 'Consumed',
-        consumed_gik: 'GiK Consumed',
-        consumed_gik_total: 'Total GiK Consumed',
-        consumed_puchases: 'Purchases Consumed',
-        consumed_purchases_total: 'Total Purchases Consumed',
-        consumed_total: 'Total Consumed',
-        err_in_fin_sum: 'Error in _generateFinancialSummaryReport: ',
-        err_in_find_pur: 'Error in _findInventoryItemsByPurchase: ',
-        err_in_find_req: 'Error in _findInventoryItemsByRequest: ',
-        expenses_for: 'Expenses For: ',
-        no_account: '(No Account)',
+        adjustments: 'Ajustes',
+        adjustments_total: 'Total de Ajustes',
+        balance_begin: 'Balanço Inicial',
+        balance_end: 'Balanço Final',
+        category: 'Categoria',
+        consumed: 'Utilizado',
+        consumed_gik: 'GiK Utilizado',
+        consumed_gik_total: 'Total GiK Utilizado',
+        consumed_puchases: 'Compras Feitas',
+        consumed_purchases_total: 'Total Purchases Feitas',
+        consumed_total: 'Total Utilizado',
+        err_in_fin_sum: 'Erros em _generateFinancialSummaryReport: ',
+        err_in_find_pur: 'Erro em _findEstoqueItemsByPurchase: ',
+        err_in_find_req: 'Erro em _findEstoqueItemsByRequest: ',
+        expenses_for: 'Despesas para: ',
+        no_account: '(Sem conta)',
         subtotal: 'Subtotal: ',
-        subtotal_for: 'Subtotal for {{category}} - {{account}}: ',
+        subtotal_for: 'Subtotal para {{category}} - {{account}}: ',
         total: 'Total: ',
-        total_for: 'Total for {{var}}: ',
-        total_purchases: 'Total Purchases',
-        transfer1: '{{quantity}} from {{location}}',
-        trasnfer2: 'From: {{source}} To: {{target}}'
+        total_for: 'Total para {{var}}: ',
+        total_purchases: 'Total Compras',
+        transfer1: '{{quantity}} de {{location}}',
+        trasnfer2: 'From: {{source}} Para: {{target}}'
       },
-      adjustment: 'Detailed Adjustment',
-      days_supply: 'Days Supply Left In Stock',
-      expense_detail: 'Detailed Expenses',
-      expense_sum: 'Summary Expenses',
-      expiration: 'Expiration Date',
-      export: 'Export Report',
-      fields: 'Fields to Include',
-      finance: 'Finance Summary',
-      generate: 'Generate Report',
-      inv_location: 'Inventario By Location',
-      inv_valuation: 'Inventario Valuation',
-      purchase_detail: 'Detailed Purchase',
-      purchase_sum: 'Summary Purchase',
-      report_type: 'Report Type',
-      stock_transfer_detail: 'Detailed Stock Transfer',
-      stock_transfer_sum: 'Summary Stock Transfer',
-      stock_usage_detail: 'Detailed Stock Usage',
-      stock_usage_sum: 'Summary Stock Usage'
+      adjustment: 'Ajustes detalhados',
+      days_supply: 'Dias de abastecimentos',
+      expense_detail: 'Despesa Detalhada',
+      expense_sum: 'Sumário de Despesas',
+      expiration: 'Data de Vencimento',
+      export: 'Exportar Relatório',
+      fields: 'Campos Incluídos',
+      finance: 'Sumário Financeiro',
+      generate: 'Gerar Relatório',
+      inv_location: 'Inventário por local',
+      inv_valuation: 'Avaliação do Estoque',
+      purchase_detail: 'Compra Detalhada',
+      purchase_sum: 'Sumário de Compras',
+      report_type: 'Tipo de Relatório',
+      stock_transfer_detail: 'Transferência de Estoque Detalhada',
+      stock_transfer_sum: 'Sumário de Transferência de Estoque',
+      stock_usage_detail: 'Uso do estoque detalhado',
+      stock_usage_sum: 'Sumário do Uso do estoque'
     },
     titles: {
-      add_purchase: 'Add Purchase',
-      add_request: 'New Request',
-      adjustment: 'Adjustment',
-      edit_purchase: 'Edit Purchase',
-      edit_request: 'Edit Request',
-      inventory_item: 'New Inventory Item',
-      inventory_report: 'Inventario Report',
-      purchase_saved: 'Inventario Purchases Saved',
-      quick_add_title: 'New Inventory Item',
-      remove_item: 'Remove Item',
-      request_fulfilled: 'Request Fulfilled',
-      request_updated: 'Request Updated',
-      transfer: 'Transfer Items',
-      warning: 'Warning!!!!!'
+      add_purchase: 'Adicionar Compra',
+      add_request: 'Nova Requisição',
+      adjustment: 'Ajustes',
+      edit_purchase: 'Editar Compra',
+      edit_request: 'Editar Requisição',
+      inventory_item: 'Novo Item de Estoque',
+      inventory_report: 'Relatório de Estoque',
+      purchase_saved: 'Compras Salvas',
+      quick_add_title: 'Novo item de estoque',
+      remove_item: 'Remover Item',
+      request_fulfilled: 'Requisição Preenchida',
+      request_updated: 'Requisição Atualizada',
+      transfer: 'Transferir Items',
+      warning: 'Cuidado!!!!!'
     }
   },
   imaging: {
-    page_title: 'Imaging Requests',
-    section_title: 'Imaging',
+    page_title: 'Requisição de Imagem',
+    section_title: 'Imagem',
     buttons: {
-      new_button: '+ new imaging'
+      new_button: '+ nova imagem'
     },
     labels: {
-      radiologist: 'Radiologist',
-      add_new_visit: '--Add New Visit--'
+      radiologist: 'Radiologista',
+      add_new_visit: '--Add Nova Visita--'
     },
     messages: {
-      no_completed: 'No completed items found.'
+      no_completed: 'nenhum item completo encontrado.'
     },
     titles: {
-      completed_imaging: 'Completed Imaging',
-      edit_title: 'Edit Imaging Request',
-      new_title: 'New Imaging Request'
+      completed_imaging: 'Exame Finalizado',
+      edit_title: 'Editar Requisição de Imagem',
+      new_title: 'Nova Requisição de Imagem'
     },
     alerts: {
-      completed_title: 'Imaging Request Completed',
-      completed_message: 'The imaging request has been completed.',
-      saved_title: 'Imaging Request Saved',
-      saved_message: 'The imaging request has been saved.'
+      completed_title: 'Requisição de Imagem Completa',
+      completed_message: 'A requisição de imagem foi realizada.',
+      saved_title: 'Requisição de Imagem salva',
+      saved_message: 'A requisição de imagem foi realizada.'
     }
   },
   medication: {
-    page_title: 'Medication Requests',
-    section_title: 'Medication',
-    return_medication: 'Return Medication',
+    page_title: 'Medicação Requisitada',
+    section_title: 'Medicação',
+    return_medication: 'Retorno da Medicação',
     buttons: {
-      dispense_medication: 'dispense medication',
-      new_button: '+ new request',
-      return_medication: 'return medication'
+      dispense_medication: 'dispensa de medicação',
+      new_button: '+ nova requisição',
+      return_medication: 'retorno de medicação'
     },
     titles: {
-      completed_medication: 'Completed Medication',
-      edit_medication_request: 'Edit Medication Request',
-      new_medication_request: 'New Medication Request'
+      completed_medication: 'Medicação Realizada',
+      edit_medication_request: 'Editar Requisição de Medicação',
+      new_medication_request: 'Nova Requisição de Medicação'
     },
     messages: {
-      create_new: 'Create a new medication request?',
-      confirm_deletion: 'Are you sure you wish to delete this medication request?'
+      create_new: 'Criar uma nova requisição de medicação?',
+      confirm_deletion: 'Tem certeza que deseja deletar a requisição de medicação?'
     },
     labels: {
-      refills: 'Refills',
-      quantity_requested: 'Quantidade Requested',
-      quantity_dispensed: 'Quantidade Dispensed',
-      quantity_distributed: 'Quantidade Distributed',
-      quantity_to_return: 'Quantidade To Return',
-      return_location: 'Return Location',
-      return_aisle: 'Return Aisle',
-      return_reason: 'Return Reason/Notes',
-      adjustment_date: 'Adjustment Date',
-      credit_to_account: 'Credit To Account'
+      refills: 'Recargas',
+      quantity_requested: 'Quantidade Requisitada',
+      quantity_dispensed: 'Quantidade Dispensada',
+      quantity_distributed: 'Quantidade Distribuída',
+      quantity_to_return: 'Quantidade para devolução',
+      return_location: 'Local de devolução',
+      return_aisle: 'Prateleira de Devolução',
+      return_reason: 'Motivo da Devolução',
+      adjustment_date: 'Data de Ajuste',
+      credit_to_account: 'Creditar na conta'
     },
     alerts: {
       returned_title: 'Medication Returned',
-      returned_message:  'The medication has been marked as returned.',
-      saved_title: 'Medication Request Saved',
-      saved_message: 'The medication record has been saved.',
-      fulfilled_title: 'Medication Request Fulfilled'
+      returned_message:  'A medicação foi marcada como devolução.',
+      saved_title: 'Requisição da Medicação foi salva',
+      saved_message: 'Registro salvo.',
+      fulfilled_title: 'A requisição da medicação foi preenchida.'
     }
   },
   appointments: {
-    current_screen_title: 'Appointment List',
-    edit_title: 'Edit Appointment',
-    new_title: 'New Appointment',
-    section_title: 'Appointments',
-    this_week: 'Appointments This Week',
-    missed: 'Missed Appointments',
-    search_title: 'Search Appointments',
-    today_title: 'Today\'s Appointments',
+    current_screen_title: 'Lista de Consultas',
+    edit_title: 'Editar Consulta',
+    new_title: 'Nova Consulta',
+    section_title: 'Consultas',
+    this_week: 'Consultas esta semana',
+    missed: 'Consultas Perdidas',
+    search_title: 'Procurar Consultas',
+    today_title: 'Consultas de Hoje',
     messages: {
-      delete_appointment_message: 'Are you sure you wish to delete this appointment?',
-      end_time_later_than_start: 'Please select an end time later than the start time.'
+      delete_appointment_message: 'Tem certeza que deseja deletar esta consulta?',
+      end_time_later_than_start: 'Por favor, selecione um horário de término mais tarde do que a hora de início.'
     },
     buttons: {
-      new_button: '+ new appointment'
+      new_button: '+ nova consulta'
     }
   },
   visits: {
     edit: {
-      actions: 'Actions',
-      edit: 'Edit',
-      date: 'Date',
-      authored_by: 'Authored By',
-      note: 'Note',
-      notes: 'Notes',
-      new_note: 'New Note',
-      visit_information: 'Visit Information',
-      new_appointment: 'New Appointment',
-      add_diagnosis: 'Add Diagnosis',
-      diagnosis: 'Diagnosis',
+      actions: 'Ações',
+      edit: 'Editar',
+      date: 'Data',
+      authored_by: 'Autoria de',
+      note: 'Nota',
+      notes: 'Notas',
+      new_note: 'Nova Nota',
+      visit_information: 'Informações da visita',
+      new_appointment: 'Nova Consulta',
+      add_diagnosis: 'Adicionar diagnóstico',
+      diagnosis: 'Diagnóstico',
       delete: 'Deletar',
-      procedure: 'Procedure',
-      procedures: 'Procedures',
-      new_procedure: 'New Procedure',
-      labs: 'Labs',
-      new_lab: 'New laboratório',
-      imaging: 'Imaging',
-      new_imaging: 'New Imaging',
-      medication: 'Medication',
-      new_medication: 'New Medication'
+      procedure: 'Procedimento',
+      procedures: 'Procedimentos',
+      new_procedure: 'Novo Procedimento',
+      labs: 'Laboratório',
+      new_lab: 'Novo laboratório',
+      imaging: 'Imagem',
+      new_imaging: 'Noao Imagem',
+      medication: 'Medicação',
+      new_medication: 'Nova Medicação'
     }
   },
   labs: {
-    section_title: 'Labs',
-    requests_title: 'Lab Requests',
-    edit_title: 'Edit Lab Request',
-    new_title: 'New Lab Request',
-    delete_title: 'Deletar Request',
-    completed_title: 'Completed Labs',
+    section_title: 'Laboratório',
+    requests_title: 'Requisição de Exame',
+    edit_title: 'Editar Requisição de Exame',
+    new_title: 'Nova Requisição de Exame',
+    delete_title: 'Deletar Requisição',
+    completed_title: 'Exames Completos',
     labels: {
-      lab_type: 'Lab Type',
-      add_new_visit: '--Add New Visit--'
+      lab_type: 'Tipo de Lab.',
+      add_new_visit: '--Add Nova Visita--'
     },
     messages: {
-      no_items_found: 'No labs found.',
+      no_items_found: 'Lab. não encontrado.',
       create_new_record: 'Create a new record?',
-      confirm_deletion: 'Are you sure you wish to delete this lab request?',
-      no_completed: 'No completed items found.'
+      confirm_deletion: 'Tem certeza que deseja deletar esta requisição laboratorial?',
+      no_completed: 'Não encontrado'
     },
     buttons: {
-      new_button: '+ new laboratório'
+      new_button: '+ novo laboratório'
     },
     alerts: {
-      request_completed_title: 'Lab Request Completed',
-      request_completed_message: 'The lab request has been completed.',
-      request_saved_title: 'Lab Request Saved',
-      request_saved_message: 'The lab request has been saved.'
+      request_completed_title: 'Requisição de laboratório realizada',
+      request_completed_message: 'Requisição de laboratório realizada.',
+      request_saved_title: 'Requisição salva.',
+      request_saved_message: 'Requisição de laboratório salva.'
     }
   },
   common: {
-    actions: 'Actions'
+    actions: 'Ações'
   },
   patients: {
     notes: {
