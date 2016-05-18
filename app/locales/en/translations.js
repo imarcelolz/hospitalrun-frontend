@@ -326,7 +326,7 @@ export default {
   },
   login: {
     messages: {
-      sign_in:  'por favor espere',
+      sign_in:  'Login',
       Erro:    'Nome de usuário ou senha está incorreta.'
     },
     labels: {
