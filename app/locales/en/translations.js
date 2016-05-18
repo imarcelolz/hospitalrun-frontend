@@ -432,7 +432,7 @@ export default {
       unit: 'Unidade',
       unit_cost: 'Custo por Unidade',
       vendor: 'Fornecedor',
-      vendor_item_number: 'Número do Item do Fornecedor',
+      vendor_item_number: 'Número do Item do Fornecedor'
     },
     messages: {
       adjust: 'Por favor, ajustar as quantidades sobre o local (s) apropriado para a conta para a diferença de {{difference}}.',
