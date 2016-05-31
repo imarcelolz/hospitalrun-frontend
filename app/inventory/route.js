@@ -8,7 +8,7 @@ export default AbstractModuleRoute.extend(FulfillRequest, InventoryId, Inventory
     if (this.currentUserCan(this.get('addCapability'))) {
       return [{
         buttonAction: 'newInventoryBatch',
-        buttonText: '+ inventory received',
+        buttonText: 'Novo Lote Recebido',
         class: 'btn btn-primary'
       }];
     }
