@@ -1,3 +1,5 @@
+import inventory from 'inventory';
+
 export default {
   dashboard: {
     title: 'O que você gostaria de fazer?'
@@ -12,13 +14,15 @@ export default {
     billing: 'Faturamento',
     administration: 'Administração',
     subnav: {
-      inventory_received: 'Novo Lote Recebido',
-      requests: 'Requisições',
-      items: 'Itens',
+
+      inventory_received: 'Pedido Recebido',
+      requests: 'Pedidos',
+      items: 'Produtos',
       completed: 'Completo',
       new_request: 'Nova Requisição',
-      inventory_received: 'Estoque Recebido',
+      inventory_received: 'Pedido Recebido',
       reports: 'Relatórios',
+
       patient_listing: 'Listando Pacientes',
       new_patient: 'Novos Pacientes',
       this_week: 'Esta Semana',
@@ -270,7 +274,7 @@ export default {
     add_new_outpatient_visit: '--Nova visita de ambulatório--',
     prescription: 'Prescrição',
     prescription_date: 'Data da Prescrição',
-    bill_to: 'Bill To',
+    bill_to: 'responsável',
     pull_from: 'Pull From',
     fulfilled: 'Fulfilled',
     delete_request: 'Deletar Request',
@@ -359,7 +363,7 @@ export default {
       aisle: 'Prateleira',
       aisle_location: 'Local da prateleira',
       all_inventory: 'Todo Estoque',
-      bill_to: 'Bill To',
+      bill_to: 'Responsável',
       consume_purchases: 'As compras do consumidor',
       consumption_rate: 'Taxa de Consumo',
       cost: 'Custo',
@@ -387,8 +391,8 @@ export default {
       gift_usage: 'Gift in Kind Usage',
       gift_in_kind_no: 'N',
       gift_in_kind_yes: 'S',
-      inventory_consumed: 'Inventario Consumida',
-      inventory_item: 'Inventario Item',
+      inventory_consumed: 'Consumido',
+      inventory_item: 'Produtos',
       inventory_obsolence: 'Inventario Obsoleto',
       invoice_items: 'Pedido de Itens',
       invoice_line_item: 'Pedido Linha Item',
