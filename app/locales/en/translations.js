@@ -1,4 +1,3 @@
-      xref: 'XRef'
 export default {
   dashboard: {
     title: 'O que você gostaria de fazer?'
@@ -105,6 +104,7 @@ export default {
       alert_import_list_update_title: 'Lista Salva',
       alert_import_list_update_message: 'A lista de pesquisa foi salva.',
       page_title: 'Lista de Pesquisa',
+      inventory_types: 'Tipo de Inventário',
       edit: {
         template: {
           add_title: 'Adicionar Valor',
