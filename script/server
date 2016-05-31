@@ -28,4 +28,4 @@ echo -n 'Checking CouchDB...'
 retry_check 3 check_couchdb || warn
 
 echo 'Starting ember server'
-ember serve 
+ember serve -H 0.0.0.0  -p 3000 -w /usr/local/bin/watchman
