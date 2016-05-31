@@ -332,7 +332,7 @@ export default {
     labels: {
       password: 'Senha',
       username: 'Usuário',
-      sign_in:  'Sign in'
+      sign_in:  'Entrar'
     }
   },
   Estoque: {
