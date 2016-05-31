@@ -4,7 +4,7 @@ export default {
   },
   navigation: {
     imaging: 'Exame de Imagem',
-    Estoque: 'Estoque',
+    inventory: 'Estoque',
     patients: 'Pacientes',
     appointments: 'Consultas',
     medication: 'Medicação',
@@ -83,8 +83,8 @@ export default {
       edit_title: 'Carregar DB'
     },
     lookup: {
-      delete_value_Estoque_type_medication_title: 'Não é possível deletar medicação',
-      delete_value_Estoque_type_medication_message: 'O tipo de Estoque medicação não pode ser excluído porque ele é necessário para o módulo de medicação.',
+      delete_value_inventory_type_medication_title: 'Não é possível deletar medicação',
+      delete_value_inventory_type_medication_message: 'O tipo de Estoque medicação não pode ser excluído porque ele é necessário para o módulo de medicação.',
       delete_value_lab_pricing_type_procedure_title: 'Não é possível deletar o tipo de preço do laboratório',
       delete_value_lab_pricing_type_procedure_message: 'O tipo de preço do procedimento de laboratório não pode ser excluído porque ele é necessário para o módulo de laboratório.',
       delete_value_imaging_pricing_type_procedure_title: 'Não é possível excluir Tipo de preço',
@@ -164,7 +164,7 @@ export default {
         add_photo: 'Adicionar Foto',
         add_patient: 'Adicionar Paciente',
         add_visit: 'Adicionar Visitante',
-        add_vitals: 'Add Vitals',
+        add_vitals: 'Adicionar',
         admit_patient: 'Admitir Paciente',
         delete_photo: 'Deletar Foto',
         delete_patient: 'Deletar Paciente',
@@ -172,13 +172,13 @@ export default {
         delete_diagnosis: 'Deletar Diagnóstico',
         delete_procedure: 'Deletar Procedimento',
         delete_socialwork: 'Deletar Serviço Social',
-        delete_vitals: 'Deletar Vitals',
+        delete_vitals: 'Deletar',
         delete_visit: 'Deletar Visitantes',
         discharge_patient: 'Discharge Patient',
         patient_reports: 'Relatório de Pacientes',
         visits: 'Visitas',
         medication: 'Medicação',
-        add_medication: 'Add Medicação',
+        add_medication: 'Adicionar Medicação',
         delete_medication: 'Deletar Medicação',
         fulfill_medication: 'Preencher Medicação',
         labs: 'Laboratórios',
@@ -190,13 +190,13 @@ export default {
         complete_imaging: 'Completar Imagem',
         delete_imaging: 'Deletar Imagem',
         Estoque: 'Estoque',
-        add_Estoque_request: 'Adicionar Requisição de Estoque',
-        add_Estoque_item: 'Adicionar Item de Estoque',
-        add_Estoque_purchase: 'Adicionar Compra Estoque',
-        adjust_Estoque_location: 'Ajustar Local de Estoque',
-        delete_Estoque_item: 'Deletar Item Estoque',
-        delete_Estoque_purchase: 'Deletar Compra de Estoque',
-        fulfill_Estoque: 'Preencher Estoque',
+        add_inventory_request: 'Adicionar Requisição de Estoque',
+        add_inventory_item: 'Adicionar Item de Estoque',
+        add_inventory_purchase: 'Adicionar Compra Estoque',
+        adjust_inventory_location: 'Ajustar Local de Estoque',
+        delete_inventory_item: 'Deletar Item Estoque',
+        delete_inventory_purchase: 'Deletar Compra de Estoque',
+        fulfill_inventory: 'Preencher Estoque',
         user_roles: 'Funções de Usuário'
       },
       messages: {
@@ -320,8 +320,8 @@ export default {
     all_requests: 'Todas as requisições',
     dispense: 'Dispensar',
     new_item: '+ novo item',
-    new_request_plus: '+ new requisição',
-    add_visit: 'Add Visita',
+    new_request_plus: '+ nova requisição',
+    add_visit: 'Adicionar Visita',
     search: 'Procurar'
   },
   login: {
@@ -335,7 +335,7 @@ export default {
       sign_in:  'Sign in'
     }
   },
-  Estoque: {
+  inventory: {
     edit: {
       cost: 'Custo por unidade:',
       delivered: 'Entregue para:',
@@ -357,7 +357,7 @@ export default {
       adjustment_type: 'Tipo de Ajuste',
       aisle: 'Prateleira',
       aisle_location: 'Local da prateleira',
-      all_Estoque: 'Todo Estoque',
+      all_inventory: 'Todo Estoque',
       bill_to: 'Bill To',
       consume_purchases: 'As compras do consumidor',
       consumption_rate: 'Taxa de Consumo',
